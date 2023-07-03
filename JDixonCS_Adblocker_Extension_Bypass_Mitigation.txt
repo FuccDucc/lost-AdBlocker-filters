@@ -1,0 +1,16 @@
+! Title: Adguard Adblocker Extension Bypass Mitigation List
+! Licence: The Unlicense (https://choosealicense.com/licenses/unlicense/) as chosen by the original author Cybo1927. I am preserving this license during the reupload of this lost filters.
+! Proof the above claim is true: https://web.archive.org/web/20210911142311/https://raw.githubusercontent.com/JDixonCS/Special-Hosts/master/Enforcement/Adguard/Adblocker_Extension_Bypass_Mitigation.txt > text: "! License: The Unlicense (https://choosealicense.com/licenses/unlicense/)" (backup: https://i.imgur.com/M6W23fL.png)
+
+! No matter the reasons that original author removed their repo's and OSS presence, even if it was ego or pride, they won't have any control over this reupload existing or not. I would never encourage anyone taking away their work from the community, instead, let the community decide if they'll keep using it, even if it gets outdated.
+
+! Status: I do not possess the skills to update filter lists regularly, this is merely a reupload of what was purportedly lost forever due to original repo being deleted. Restored from OSINT backups. At least, the github raw link will work with your adblocker again.
+! Version: 05.13.2020-Rev1
+! Description: Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing Adguard Adblocker Extension.
+
+! =======================================================================================================================================
+! Not all rules will with every Adguard software program just simply import the filter for Adguard software. This list will improve overtime.
+! This avoids prefecting all together, this is the rule you will need the most.
+||*^$csp=prefetch-src 'none'
+! This rule is responsible for mitigating hyperlink auditing and pings. 
+||*$ping

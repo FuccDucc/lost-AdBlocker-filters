@@ -1,0 +1,145 @@
+! Title: Prototype Regex_Expressions_List
+! Licence: The Unlicense (https://choosealicense.com/licenses/unlicense/) as chosen by the original author InnoScorpio / JDixonCS. I am preserving this license during the reupload of this lost filters.
+! Proof the above claim is true: https://web.archive.org/web/20210911141915/https://raw.githubusercontent.com/JDixonCS/Public_Adblock_Filters/master/Combined/Regex_Expression_List.txt > text: "! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)" (backup: https://i.imgur.com/pqRZs1U.png)
+
+! No matter the reasons that original author removed their repo's and OSS presence, even if it was ego or pride, they won't have any control over this reupload existing or not. I would never encourage anyone taking away their work from the community, instead, let the community decide if they'll keep using it, even if it gets outdated.
+
+! Status: I do not possess the skills to update filter lists regularly, this is merely a reupload of what was purportedly lost forever due to original repo being deleted. Restored from OSINT backups. At least, the github raw link will work with your adblocker again.
+! Version: 04.29.2020
+! Description: List of rules consisting of complex URL expressions from various sources. 
+
+! =================================================================================
+! bogachenko's Filter List
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?(fingerpr[ie]nt|fp)([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?(metri[ck]?[asx]?|mtrcs?)([0-9]{1,3})?\./,domain=~metrica.yandex.com|~metrica.yandex.ru|~metrika.yandex.com|~metrika.yandex.ru
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?(sx|np|mx)cdn([0-9]{1,3})?\.now\.sh/
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?69([a-z]{1,2})\.([a-z]{4})/
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?ad[svbxo]?(er(ver?)?t?(ise|ising|isement)?)?\./,domain=~ad.nl|~ads.google.com
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?ads?[!"#$%&'()*+.,:;<=>?@/\^_`{|}~-]?(visor|serve|bb|by|logs?|[rs]v[rs]?|sdk|delivery|engine)([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?aff(iliat(es?|ion)?)([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?analy(tic?(?:[asx]|sys|tor)?)?([0-9]{1,3})?\./,domain=~analytics.google.com
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?bann?i?er[se]?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?beacons?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?cli?ck?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?collectors?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?count(s|ers?)?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?delivery?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?events?([0-9]{1,3})?\./,domain=~webmoney.ru
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?geo([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?informers?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?logs?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?m[io]nero?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?mine([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?monitor([0-9]{1,3})?\./,domain=~monitor.firefox.com
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?partners?([0-9]{1,3})?\./,domain=~partners.yandex.by|~partners.yandex.ru|~partners.yandex.ua
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?pi?xe?l?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?ping([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?piwik([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?puss[0-9]{2,3}\.com/
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?px\-intl([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?re[ck]l?(am[asy]?)?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?snippets?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?tags?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?telemetr(y|ics)?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?tizers?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?tr([a-zA-Z0-9]{1})?ck([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?track(ers?|ing|cli?ck?)?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?vast([a-z]{1})?([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/((www|wap)\.)?worker([0-9]{1,3})?\./
+/^(https?|ftp|wss?):\/\/([^\s]+\.)?(de|mi|ner|nis)\-(de|mi|ner|nis)\-(de|mi|ner|nis)\-(de|mi|ner|nis)\-?([0-9]{1,3})?\.info/
+/^(https?|ftp|wss?):\/\/([^\s]+\.)?ablen[0-9]{2}\.tk/
+/^https?:\/\/(([a-zA-Z]{1})?[0-9]{1,4})?adserv\.[a-z]+/
+/^https?:\/\/(d3c3uihon9kmp|d18g6t7whf8ejf|ds88pc0kw6cvc|d1uvhm532ipx9t|d2z51a9spn09cw|d2k7b1tjy36ro0|d1ks8roequxbwa|d1mbihpm2gncx7|d141wsrw9m4as6|d3ddidv77grh0f|d1e1rbybdt265x|d3125zvx5yi5sj|d10lv7w3g0jvk9|d18mealirgdbbz|d3hs51abvkuanv|d1qggq1at2gusn|d1hi41nc56pmug|d3e1078hs60k37|d1r90st78epsag|d1r90st78epsag|d31mxuhvwrofft|d3d52lhoy0sh2w|dkm6b5q0h53z4|d8rk54i4mohrb|d3t5ngjixpjdho|doo6pwib3qngu|d2glav2919q4cw|d22sfab2t5o9bq|dgw7ae5vrovs7|d2c8v52ll5s99u|desgao1zt7irn|d30wo2lffetbp8|d1v9u0bgi1uimx|d3a42c7xs4vn3|d29i6o40xcgdai|d31xqmzex8ubh8|d14qd3he45186l|dsh7ky7308k4b|d2kyy9hvbrzkgn|d2yh8t8mdj4l9x|d1fc8wv8zag5ca|d2v02itv0y9u9t|d2wy8f7a9ursnm|d24n15hnbwhuhn|d31j93rd8oukbv|d10lpsik1i8c69|d10lumateci472|d11eq81k50lwgi|d12tr1cdjbyzav|d12ulf131zb0yj|d138am4hd4ke4y|d13czkep7ax7nj|d13dhn7ldhrcf6|d13im3ek7neeqp|d140sbu1b1m3h0|d1447tq2m68ekg|d15565yqt7pv7r|d158nafix8anfs|d15cjcet1djbmv|d15gt9gwxw5wu0|d15qhc0lu1ghnk|d160mt023h8h3d|d162nnmwf9bggr|d1635hfcvs8ero|d169bbxks24g2u|d173vqb05g6hza|d17f2fxw547952|d17rlarvg2khuc|d18q5nc9wflibl|d19182vyfoustz|d19972r8wdpby8|d19uh5b0umbjrr|d1ade4ciw4bqyc|d1aezk8tun0dhm|d1af033869koo7|d1ar5xirbydtuc|d1bevsqehy4npt|d1byvlfiet2h9q|d1cdnlzf6usiff|d1cerpgff739r9|d1cl1sqtf3o420|d1clfvuu2240eh|d1clufhfw8sswh|d1czd1q73kbu32|d1d43ayl08oaq2|d1d8vn0fpluuz7|d1d95giojjkirt|d1dli2tyorled9|d1dnmhdhg9vg1d|d1ebha2k07asm5|d1eoo1tco6rr5e|d1ep3cn6qx0l3z|d1ewpr7kbabyrj|d1ey3fksimezm4|d1f5rbi95y1icu|d1fo96xm8fci0r|d1gojtoka5qi10|d1gp8joe0evc8s|d1gp9nlx229wzz|d1grtyyel8f1mh|d1gyluhoxet66h|d1i2v9a8xom2hy|d1i9kr6k34lyp|d1ivexoxmp59q7|d1izbwxtc3f9ue|d1jl096lp4cce0|d1k0glcmk0b5rb|d1k29rhvz38kg5|d1k74lgicilrr3|d1ksyxj9xozc2j|d1l6p2sc9645hc|d1lm7kd3bd3yo9|d1m6l9dfulcyw7|d1mbgf0ge24riu|d1mib12jcgwmnv|d1mroptkfdxko5|d1mub3aw743hsf|d1mxvenloqrqmu|d1n7ypf85zfej7|d1nh2vjpqpfnin|d1nkcqm1nusqof|d1nmxiiewlx627|d1noellhv8fksc|d1p2zvpeuweyai|d1p7elpjrt6qav|d1pcttwib15k25|d1pdpbxj733bb1|d1piupybsgr6dr|d1pozdfelzfhyt|d1qc76gneygidm|d1qk9ujrmkucbl|d1qpxk1wfeh8v1|d1qtf1avwa1wvl|d1r27qvpjiaqj3|d1rdh3xxuqlqfo|d1rgnfh960lz2b|d1rguclfwp7nc8|d1rkf0bq85yx06|d1ros97qkrwjf5|d1spb7fplenrp4|d1tprjo2w7krrh|d1uwd25yvxu96k|d1uy7uzra011au|d1v6js7bjzmhoa|d1vbm0eveofcle|d1vh0xkmncek4z|d1vrcwxei1aj0g|d1vwpe7grtcv9d|d1wa9546y9kg0n|d1wi563t0137vz|d1wscoizcbxzhp|d1xfq2052q7thw|d1yu5hbtu8mng9|d1z2jf7jlzjs58|d1zatounuylvwg|d1zfhhmz4n1jvq|d1zgderxoe1a|d20duyjzb7cuoc|d20je219bs8hnq|d21aw2xov4zz0i|d21j20wsoewvjq|d21o24qxwf7uku|d22lo5bcpq2fif|d22v2nmahyeg2a|d23guct4biwna6|d23nyyb6dc29z6|d23p9gffjvre9v|d240937yockcdo|d24w6bsrhbeh9d|d258hxk86e2ixw|d258j801nsw1p7|d25ruj6ht8bs1|d25xkbr68qqtcn|d269y12mnftu9c|d26b395fwzu5fz|d26c6kzavi5zwd|d26dzd2k67we08|d26j9bp9bq4uhd|d26r15y2ken1t9|d26wy0pxd3qqpv|d27jt7xr4fq3e8|d27x580xb9ao1l|d287x05ve9a63s|d28ethi6slcjbm|d28g1fhp6rn9w3|d28g9g3vb08y70|d28k9nkt2spnp|d29p64779x43zo|d29r6igjpnoykg|d2a0bnlkc0czvp|d2anfhdgjxf8s1|d2b2x1ywompm1b|d2b560qq58menv|d2b65ihpmocv7w|d2b7n13v8adl6f|d2bgg7rjywcwsy|d2bj2texxib1qg|d2bw638ufki166|d2cgumzzqhgmdu|d2cxkkxhecdzsq|d2d2lbvq8xirbs|d2d8qsxiai9qwj|d2dq2ahtl5zl1z|d2dxgm96wvaa5j|d2fhjyz3dwdx87|d2focgxak1cn74|d2g9nmtuil60cb|d2gfdmu30u15x7|d2gfi8ctn6kki7|d2ghscazvn398x|d2gi7ultltnc2u|d2gpgaupalra1d|d2gt9oovykfp1z|d2gtlljtkeiyzd|d2gz6iop9uxobu|d2hap2bsh1k9lw|d2hcjk8asp3td7|d2hluuq2g8gwrv|d2i54aseqwhx68|d2ipklohrie3lo|d2jn12r3o7an7z|d2kbaqwa2nt57l|d2kmrmwhq7wkvs|d2kz60b0gq4lg|d2l8bbn629wykr|d2lv4zbk7v5f93|d2lxztepvo7ma1|d2mic0r0bo3i6z|d2mq0uzafv8ytp|d2muzdhs7lpmo0|d2nlytvx51ywh9|d2nn3xyicdpsrf|d2nq0f8d9ofdwv|d2nrdy2pg3k168|d2nxi61n77zqpl|d2nz8k4xyoudsx|d2nzjxafm0iowq|d2o307dm5mqftz|d2oallm7wrqvmi|d2oh4tlt9mrke9|d2omcicc3a4zlg|d2pc0q32fod0ha|d2pgy8h4i30on1|d2plxos94peuwp|d2pppxxtaciku9|d2pxb4n3f9klsc|d2pxbld8wrqyrk|d2q7mvwub8tmwf|d2qmp7jjpd79k7|d2qz7ofajpstv5|d2r359adnh3sfn|d2ry9vue95px0b|d2s64zaa9ua7uv|d2so4705rl485y|d2szg1g41jt3pq|d2t2on23g4lty1|d2tgev5wuprbqq|d2tgfbvjf3q6hn|d2tnimpzlb191i|d2ubicnllnnszy|d2ue9k1rhsumed|d2uevgmgh16uk4|d2ugaifelwk06r|d2uzdrx7k4koxz|d2v4glj2m8yzg5|d2v9ajh2eysdau|d2vig74li2resi|d2vt6q0n0iy66w|d2wl3qmk54t3ha|d2xgf76oeu9pbh|d2xkqxdy6ewr93|d2xsy1lxezptdm|d2yhukq7vldf1u|d2ymkpxi1rgldj|d2z0gqc8sv0l7p|d2z1smm3i01tnr|d2zah9y47r7bi2|d30zrwt3s044zr|d3135glefggiep|d31807xkria1x4|d31bfnnwekbny6|d31qbv1cthcecs|d32ffatx74qnju|d32pxqbknuxsuy|d32r49xyei4vz6|d32r9jwgeu9dzx|d32z5ni8t5127x|d33f10u0pfpplc|d33im0067v833a|d33j9ks96yd6fm|d33otidwg56k90|d33t3vvu2t2yu5|d34ko97cxuv4p7|d34obr29voew8l|d34rdvn2ky3gnm|d35r45qhjmgs3g|d36lvucg9kzous|d36mpcpuzc4ztk|d36sxvmjoflc2i|d36wtdrdo22bqa|d37dzu39aqhuxu|d37h3y471q0lt2|d37kzqe5knnh6t|d37s9vd5t6mov7|d37sfqor0g25ph|d38cp5x90nxyo0|d38pxm3dmrdu6d|d38r21vtgndgb1|d396ihyrqc81w|d39hdzmeufnl50|d39xqloz8t5a6x|d3a2okcloueqyx|d3aa0ztdn3oibi|d3ahinqqx1dy5v|d3al52d8cojds7|d3alqb8vzo7fun|d3anogn3pbtk4v|d3aq14vri881or|d3avqv6zaxegeu|d3ax6xygyb5hn9|d3bvcf24wln03d|d3c3cq33003psk|d3cesrg5igdcgt|d3cv4a9a9wh0bt|d3cxv97fi8q177|d3dc2aopftfkeo|d3dcugpvnepf41|d3dphmosjk9rot|d3dytsf4vrjn5x|d3elm8wezzwg42|d3emsmln8xfj03|d3ezl4ajpp2zy8|d3f9mcik999dte|d3fqhkmofpujs3|d3fzrm6pcer44x|d3h1v5cflrhzi4|d3hlizmpi4g3v9|d3hmb5h5qngs7g|d3hr5gm0wlxm5h|d3i1asoswufp5k|d3id4jppiyyek8|d3irruagotonpp|d3iwjrnl4m67rd|d3iz6lralvg77g|d3l3lkinz3f56t|d3l4qa0kmel7is|d3laygk9zni6hc|d3lc9zmxv46zr|d3lvr7yuk4uaui|d3lzezfa753mqu|d3m41swuqq4sv5|d3m79ugzs2d8im|d3m83gvgzupli|d3mj0pkbugdjcn|d3mvnvhjmkxpjz|d3n6ab9lij5r0c|d3nb4kk262p6sf|d3noqwmgo39at7|d3nslu0hdya83q|d3nvrqlo8rj1kw|d3oep4gb91kpuv|d3ojzyhbolvoi5|d3oltyb66oj2v8|d3p2b5qewrnsyv|d3p9ql8flgemg7|d3pe8wzpurrzss|d3phbp7p78bdk9|d3pkae9owd2lcf|d3pkntwtp2ukl5|d3pkrll6is44dx|3q2dpprdsteo|d3q33rbmdkxzj|d3q6px0y2suh5n|d3qszud4qdthr8|d3qxef4rp70elm|d3qxwzhswv93jk|d3r7h55ola878c|d3rhktq8uy839j|d3rmnwi2tssrfx|d3rp5jatom3eyn|d3s6ctxr1rpcpt|d3s7ggfq1s6jlj|d3t2wca0ou3lqz|d3t9ip55bsuxrf|d3t9nyds4ufoqz|d3td6g0k30g56f|d3tdefw8pwfkbk|d3tglifpd8whs6|d3u5zn5k9864p0|d3ud741uvs727m|d3uemyw1e5n0jw|d3ujids68p6xmq|d3uqm14ppr8tkw|d3v1lb83psg9di|d3v27wwd40f0xu|d3vc1nm9xbncz5|d3von6il1wr7wo|d3vpf6i51y286p|d47xnnr8b1rki|d4ax0r5detcsu|d4ngwggzm3w7j|d5i9o0tpq9sa1|d5nxst8fruw4z|d5ou3dytze6uf|d5pb47xzjz3fc|d5pvnbpawsaav|d60y8cj1tje2a|d6bdy3eto8fyu|d6jkenny8w8yo|d6sav80kktzcx|d6swopgiplmy0|d6ummfe8aubt5|d81mfvml8p5ml|d830x8j3o1b2k|d8qy7md4cj3gz|d8rk54i4mohrb|d985a9d2clzq5|d9lq0o81skkdj|d9rj2sdxjer5v|d9shvcd294i4o|d9tnvwv7i2n85|da3uf5ucdz00u|da5w2k479hyx2|dal9hkyfi0m0n|daq0d0aotgq0f|daw76z57propz|dbjnwpbqx5a6o|dc08i221b0n8a|dc44qjwal3p07|dc5ig2fc8lg83|dc8na2hxrj29i|dc8xl0ndzn2cb|dcjg1gv1px1h|ddfnmo6ev4fd|ddwht76d9jvfl|ddyv8sl7ewq1w|de8of677fyt0b|debojuagug1sf|demkc32bq01ah|desv383oqqc0|df0pmigc8xs70|dfdbz2tdq3k01|dff7tx5c2qbxc|dfrs12kz9qye2|dgkytklfjrqkb|dgqxhburlt16t|dh0uktvqfaomb|disy2s34euyqm|djlf5xdlz7m8m|djtflbt20bdde|djwf0dl2q9i99|dk2mvwe4uw0z3|dk45agakx3yfl|dk7rftbivnkgr|dkd69bwkvrht1|dkdwv3lcby5zi|dkj2m377b0yzw|dl1d2m8ri9v3j|dl392qndlveq0|dlupv9uqtjlie|dm0acvguygm9h|dm8ojo46iwxm2|dm8srf206hien|dmtw0i4zln92b|dn3y71tq7jf07|dnhgz729v27ca|dnn506yrbagrg|do67etikr7pwz|dohs95d6tfj19|doug1izaerwt3|dp1fzft1fdb84|dp51h10v6ggpa|dpidudyah7i0b|dpp750yjcl65g|dpz55hrzd89zs|dq2tgxnc2knif|dqqulesm3pfse|dr3k6qonw2kee|dr8pk6ovub897|drp60gfj3y9kn|dsh1ct2zrfakt|dsms0mj1bbhn4|dssja7qsifeak|dtkm4pd19nw6z|dtlilztwypawv|dtxtngytz5im1|dtym7iokkjlif|du8783wkf05yr|dufue2m4sondk|dv2m1uumnsgtu|dv4uxy777adjt|dvdsm0rlx65fo|dviixeyykyqjv|dwf6crl4raal7|dwxmyiyf7jg6|dx5qvhwg92mjd|dxq6c0tx3v6mm|dxqd86uz345mg|dy48bnzanqw0v|dycpc40hvg4ki|dyl3p6so5yozo|dz2fz0bgyq9tn|dzbx8qv1at614|dzpu6za66svjl|dzs55b7slwyx|d1lxhc4jvstzrp|d24cze5sab2jwg|d2va1d0hpla18n|du4rq1xqh3i1k|d3r6awv9ysiyn4|d63a3au5lqmtu|d2c7xlmseob604|djv99sxoqpv11|d1b0fk9ns6n0w9|d2na2p72vtqyok|d1n3tk65esqc4k|d2wpknqle9nuv8|d3l320urli0p1u|dc5k8fg5ioc8s|drda5yf9kgz5p)\.cloudfront\.net/
+/^https?:\/\/(syndication|analytics)\.twitter\.com/
+/^https?:\/\/(www\.)?(client\-event\-reporter|countess|mp|polyfill|sentinel|spade|trowel|fan)\.twitch(svc)?\.(com|net|tv)/
+/^https?:\/\/(www\.)?facebook(corewwwi)?\.(com|net|onion)\/tr\D/
+/^https?:\/\/(www\.)?sunnimiq([0-9]{1,3})?\.cf/
+/^https?:\/\/1x[a-z]{3}\.world/
+/^https?:\/\/aj[0-9]{3}\.online/
+/^https?:\/\/denis\-[a-z0-9]{7,12}\-[a-z0-9]{7,12}\.com/
+! Compiled-Anti-Adblock List
+/:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$script,third-party
+/AdblockDetector.js$script
+/AdblockDetector/handler.min.js$script
+/AdblockMessage.
+/Scripts/jquery.min.js^$script,domain=readcomiconline.to
+/SvgAdblockDetected/*
+/\.(watchcartoononline|9anime).*\/[a-zA-Z0-9]{15,40}.*http/$image,script
+/\.cloudfront\.net/\?.*[a-zA-Z0-9]{5,16}/$subdocument,script,third-party,domain=~amazon.com|~lemediatv.fr
+/\.tfd\.com/.*[a-zA-Z0-9]{22}/$image
+/\.thefreedictionary\.com/.*[a-zA-Z0-9]{22}/$image,script
+/\/(propadbl\_epxhd\.js|galaxad\_tpx\.js)/$script,domain=topeuropix.net|europixhd.net
+/\/1337x\..*\/.*[a-f]{7,}/$script
+/\/[a-z]{9,15}-[a-z0-9]{9,18}-[a-z0-9]{4,18}\.png/$image,domain=dailyheadlines.com|sportsworldreport.com|100percentfedup.com|4chan.org|activistpost.com|addictinginfo.com|alfonzorachel.com|allthingsvegas.com|americanewshub.com|americansublime.com|americasfreedomfighters.com|askmefast.com|auntyacid.com|barbwire.com|beforeitsnews.com|bestfunnyjokes4u.com|bighealthreport.com|bigleaguepolitics.com|bipartisanreport.com|bizpacreview.com|boredomtherapy.com|breaking911.com|breakingnews.ie|breathecast.com|bugout.news|bulletsfirst.net|canadafreepress.com|celebrity-gossip.net|cheapism.com|cheatsheet.com|chicksonright.com|clashdaily.com|classicalite.com|collapse.news|comicallyincorrect.com|conservativebyte.com|conservativeintel.com|conservativetribune.com|conservativevideos.com|constitution.com|coviral.com|craigjames.com|creepybasement.com|crossmap.com|cyberwar.news|dailydot.com|dailyfeed.co.uk|dailyheadlines.net|dailyhealthpost.com|dailysurge.com|damnlol.com|dccrimestories.com|deneenborelli.com|digitaljournal.com|directexpose.com|eaglerising.com|earnthenecklace.com|enstarz.com|evil.news|faithit.com|fitnessconnoisseur.com|foreverymom.com|freedom.news|freedomdaily.com|freedomforce.com|freedomoutpost.com|freewarefiles.com|funnyand.com|gamer4k.com|gamerant.com|gamersheroes.com|girlsjustwannahaveguns.com|glitch.news|godfatherpolitics.com|gosocial.co|grammarist.com|greatamericanrepublic.com|groopspeak.com|guardianlv.com|guns.news|gymflow100.com|hackspirit.com|hallels.com|hautereport.com|headcramp.com|healternativedaily.com|healthstatus.com|hngn.com|honesttopaws.com|icepop.com|ifyouonlynews.com|infowars.com|instigatornews.com|intellectualconservative.com|janmorganmedia.com|jobsnhire.com|joeforamerica.com|juicerhead.com|justdiy.com|kdramastars.com|keepandbear.com|knowledgedish.com|kpopstarz.com|lastresistance.com|latinpost.com|legalinsurrection.com|liberty.news|libertyalliance.com|libertyunyielding.com|lidblog.com|lifebuzz.com|madworldnews.com|makeagif.com|medicine.news|mentalflare.com|minutemennews.com|moneyversed.com|musictimes.com|myscienceacademy.org|natural.news|naturalblaze.com|naturalnews.com|naturalsociety.com|natureworldnews.com|newser.com|newseveryday.com|newsthump.com|o4anews.com|oddee.com|opednews.com|parentherald.com|patriotnewswire.com|patriotoutdoornews.com|patriottribune.com|pickthebrain.com|politicalcowboy.com|politicaloutcast.com|politichicks.com|practicallyviral.com|quirlycues.com|readysethealth.com|realfarmacy.com|realmomsrealreviews.com|realtytoday.com|redhotchacha.com|redmaryland.com|returnofkings.com|reverbpress.com|reviveusa.com|rightwingnews.com|rightwingtribune.com|robotics.news|rollingout.com|rpnewswire.com|sarahpalin.com|shark-tank.com|shedthoselbs.com|silenceisconsent.net|slender.news|sonsoflibertymedia.com|spectator.org|stevedeace.com|stupid.news|supercheats.com|survivalnation.com|techconsumer.com|technobuffalo.com|techtimes.com|telexplorer.com.ar|terezowens.com|thealternativedaily.com|theblacksphere.net|theboredmind.com|thefreethoughtproject.com|thegatewaypundit.com|thehayride.com|thelibertarianrepublic.com|thelibertydaily.com|themattwalshblog.com|thepoke.co.uk|thepolitistick.com|therealside.com|therightscoop.com|theviralmob.com|threepercenternation.com|tiebreaker.com|tinypic.com|tosavealife.com|traileraddict.com|truththeory.com|twisted.news|universityherald.com|urbantabloid.com|usherald.com|valuewalk.com|vcpost.com|vgpie.com|victoriajackson.com|videogamesblogger.com|viralnova.com|viralthread.com|visiontoamerica.com|wakingtimes.com|westernjournalism.com|whatfinger.com|winningdemocrats.com|xtribune.com|youthhealthmag.com
+/\:\/\/[a-z0-9]{5,26}\.com\/?.*zoneid=[0-9]{7}/$third-party,popup
+/\:\/\/[a-z0-9]{5,26}\.com\/[0-9]{7}\.html?/$third-party,popup
+/\:\/\/[a-z0-9]{5,32}\.(bid|com)\/[0-9A-Za-z]{2,9}\.(html?|css|js|aspx?|asp?).*[0-9]{10}/$third-party,script,stylesheet
+/\:\/\/[a-z0-9]{5,32}\.(bid|com)\/[0-9]{2,9}\.css$/$third-party,stylesheet
+/\:\/\/[a-z]{4,12}\.com\/[\w\/\-.+]{160,}/$subdocument,third-party,script
+/\:\/\/s3\.amazonaws\.com\/.*[a-f0-9\/]{50,}/$script,xmlhttprequest,third-party,domain=~amazon.com
+/\www\.techpowerup\.com/.*[a-f0-9]{5,9}/$image
+/^(adbetclickin)\.pink/$third-party
+/^(adbetnet|braun634|clksite|deloplen|dolohen|exoclick|exoclsodaqs|exosrv|getclicky|onclicksuper|poparya|popmyads|propellerclick|syndapop|syndicpop|ytimgg|zarpop|exdynsrv|exarab|pastoupt|pushnevis|tslomhfys|clickadilla|cap\-cap\-pop|tinypass)\.com/$third-party
+/^(adswrapme)\.click/$third-party
+/^(click2m)\.org/$third-party
+/^(popcash)\.net/$third-party
+/^(popunders)\.bid/$third-party
+/^(propu)\.sh/$third-party
+/^https:\/\/.*?\/v2\/0\/[a-zA-Z0-9_-]{30,}$/$third-party,script
+/^https?:\/\/([0-9a-z]+\.)?(animeland\.us|animenova\.org|animeplus\.tv|animewow\.org|gogoanime1\.com|gogoanime\.in|gogoanime\.to|gogoanime\.tv|gogoanimes\.co|goodanime\.co|kimcartoon\.to|kimcartoon\.tv|kiss-anime\.ws|mangareader\.net|readcomiconline\.to|thewatchcartoononline\.tv|toonget\.net|toonova\.net|watchcartoononline\.io|kickassanime\.io)\/[a-z]+\/[0-9a-zA-Z\-\_]{15,50}$/$script
+/^https?:\/\/([a-z0-9]{3,10}\.)?[a-z0-9]{5,15}\.(click|com|bid|net|online|top|club)\/([a-z0-9]{2}\/){3}[a-f0-9]{32}\.js$/script
+/^https?:\/\/(openload\.(co|io|link|pw)|oload\.(cc|cloud|club|download|info|fun|live|network|services|site|space|stream|tv|win)|oladblock\.(me|services|xyz))/$csp=default-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.openload.co *.cloudflare.com *.oloadcdn.net;
+/^https?:\/\/(streamango|streamcherry)\.com/$csp=default-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.fruithosted.net;
+/^https?:\/\/[\w.-]*gelbooru\.com.*[a-zA-Z0-9?!=@%#]{40,}/$image,other,domain=gelbooru.com
+/^https?:\/\/[a-z0-9]{4,12}\.(accountant|bid|cf|club|cricket|date|download|faith|fun|ga|gdn|gq|host|info|loan|men|ml|online|ovh|party|pro|pw|racing|review|rocks|science|site|space|stream|tk|top|trade|webcam|website|win|xyz|store|solutions|software|social|site|shop|services|sale|run|rip|reviews|restaurant|report|zone)\/[\w\/\-.+]{120,}/$third-party,subdocument
+/^https?:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$third-party,script
+! Custom Filters - Schuzak 
+/^https?://(?:[^/]{0,2}(?:[^w/][^/]*)?\.)?ad(?:s(?:e?rv(?:er?)?)?|im(?:age|g)s?)?\d*(?:(?:\.[\w-]+){3,}|\.[\w-]+\.\w{3,}|\.[\w-]{4,}\.\w{2})/|/_*ad(?:se?rv(?:er?)?|im(?:age|g)s?|vertis(?:e(?:ments?)?|ing))\d*[\./]|\.ads?\d*[/-]|/ad(?:sv?\d{0,2}/|\d-|\d*/js/|j?/.+;.*[\?&])|^[^\?&]+/(?:load)?ads?(?:(?:frame|_[a-z]+)*\d*\.(?:js|php))?(?:$|[\?&])|[/\?&]ads?_?(?:id|type|size)=|[/\?&]view=ad(?:&|$)/
+/^http://[^/]+/m?w/\d+\.\d+/jstag|/www/delivery/|/a(?:js|fr|vw)(?:\.php)?\?|/(?:html|js)\.ng/|/aamsz=|/[ad]\.js$|://bwp\.[^/]+/search(?:$|\?)|(?:\.aff?ili(?:ate)?\..+|adsense(?:[_-]?\d+)?)\.js$/
+//creatives?//$third-party
+//wp-content/plugins/.*(?:popup|promoter|-ad/)|/welcome20\d{2}.*\.js$/
+/(?:load(?:er|ing)|indicator)\d*\.gif(?:$|\W)/
+/^http://(?:[\d\.]+|(?:[^/]+\.)*ad(?:-|img\.)[^/]+)//$third-party
+//koukoku/|\.yimg\.jp/bdv/(?!.+\.js\?v=\d+)|/yjaxc\.|[\?&]ctxtId=/
+/[/\?&]adpds_|/cfdr\d/|/(?:(?:pc|sp)ads?|ads?(?:pc|sp))\.js(?:$|\?)|/rr\?rk=/$third-party
+! ================================================================
+! Schuzak Whitelisting
+@@/^https:///$document
+@@/^^\w+://(?:\[(?:0?:[0:]*:1|F(?:E8|[CD]0)0:[0:]*:[^\]]*)\]|1(?:27|0|72\.(?:1[6-9]|2\d|3[01])|92\.168)\.[\d.]+|localhost|(?:[^/]+\.)*(?:(?:int|gou?v(?:ern(?:e?men)?)?t?|mil|edu)(?:\.[a-z]{2})?|(?:g(?:o[bknps]?|[vc]|ub)|parliament|lg|mun|m(?:i|od)|tsk|idf|e(?:d|un)|ac|res|sc(?:i|h(?:ool)?)|k(?:12|g)|[hme]s|cri|med|s(?:a|ld)|health)\.[a-z]{2}|(?:(?:city|town|vill)(?:\.[\w-]+)?|pref|metro)\.[a-z]{3,9}\.jp|(?:(?:(?:c[io]|town|vil)\.[\w-]+|state)\.[a-z]{2}|fed|isa|nsn)\.us))(?::\d+)?//$document
+@@/[\./](admin|control|manager)[\./]/$document
+@@/[/_-](?:asset|manager|preference|setting|config)(?!.*\.(?:jpe?g|gif|png|swf)(?:$|\W))|(?:[\.-]min\.js|\.css|\.xml)$|\.[a-z]+#|video=|=video|\.(?:flv|mp4)$|/res/js/ad.js$/
+! ==============================================================
+! Custom Filters - CHEF-KOCH
+/^((?!(^https?):\/\/(ajax\.googleapis\.com|cdn\.jsdelivr\.net|cdnjs\.cloudflare\.com|code\.jquery\.com|codeorigin\.jquery\.com|content\.jwplatform\.com|maxcdn\.bootstrapcdn\.com|p\.jwpcdn\.com|player\.twitch\.tv|player\.vimeo\.com|releases\.flowplayer\.org|s\.ytimg\.com|static\.escdn\.co|vjs\.zencdn\.net|vk\.com|www\.gstatic\.com)\/).)*$/$script,third-party,domain=2giga.link|alltube.tv|alltube.tv|deltabit.co|estream.to|ifrp.xyz|kinokrad.co|mp3free.pw|protect-iframe.com|povwideo.net|powvideo.net|sleeptimer.org|ya3ale.com
+/^((?!(^https?):\/\/(alltube\.tv|vidfile\.net|(www\.)?youtube\.com|openload\.co|docs\.google\.com|video\.sibnet\.ru|oload\.stream|oload\.win|streamango\.com|vidlox\.tv|(www\.)?rapidvideo\.com|tune\.pk|(www\.)?dailymotion\.com|estream\.to|ebd\.cda\.pl|flashx.tv|flashx.ws|fruitstreams\.com|gamedor\.usermd\.net|hqq\.tv|hqq\.watch|nowvideo\.sx|ok\.ru|rutube\.ru|sendvid\.com|stream\.moe|st\.chatango\.com|streamcherry\.com|thevideo\.me|thevideo\.website|uptostream\.com|vidlox\.me|vidoza\.net|vshare\.io|www\.speedvid\.co|www\.speedvid\.net|www\.google\.com\/recaptcha)\/).)*$/$subdocument,domain=123telugu.com|2giga.link|a-o.ninja|alltube.pl|alltube.tv|centrum-dramy.pl|estream\.nu|estream.to|love-drama.pl|netiap.com|szukajka.tv|vidfile.net
+/^(https?|wss?):\/\/([0-9a-z\-]+\.)?([0-9a-z\-]+\.)(accountant|bid|cf|club|cricket|date|download|faith|fun|ga|gdn|gq|loan|men|ml|ovh|party|pro|pw|racing|review|rocks|science|site|space|stream|tk|top|trade|webcam|win|xyz|zone)(\.)?\/(.*)/$third-party,websocket,domain=~myinterview.com|~webtorrent.io
+! ===============================================================
+! Cybo1927's - Ultimate Protection
+/^https?:\/\/(www\.)?promo(tion)?\./$all
+! ===============================================================
+! Cybo1927's - Hosts
+! RegEX Stuffs
+! Block insecure (HTTP) popups
+! /^http:/$popup,domain=~pearsonrealize.com|~pearsoncmg.com - Removed because it breaks way too many things
+! Block insecure (HTTP) popunders on supported adblockers
+! /^http:/$popunder - Removed because it breaks way too many things
+! Block Insecure Third-Party IP Addresses
+/^http:\/\/(www\.)?([0-9]{1,3}\.){3,4}(:*)?/$third-party
+! Screen resolution tracker
+/[&]s(screen)?[=][0-9]{3,}x[0-9]{3,}[&]/
+! Platform Tracker
+/[&]platform[=][a-zA-Z]/$domain=~spotify.com
+! Get the hard to block sponsored content on Reuters
+/[?o=][0-9]{2,}[&][a-z][=][0-9]{3,}[&][a-z][=][0-9]{1,}[&][a-z][=][0-9]{10,}[&][a-z][=][0-9]{3,}[&][a-z][=][A-Z]/$domain=reutersmedia.net|reuters.com
+! General advert blocker
+/\.ad(vert|verts|vertisement|click|clicks|cash|buzz|break|img|image|server|service|share|tech|pro|promo|exchange|dump)+\..+/
+! TraceDock RegEX blocking
+/[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./
+! Collecter Analytics Scripts
+/\/collect(ion|er)?\/v[0-9]{1,2}/
+! ====================================================================
+! Fuck Fuckadblock
+/\/xvideo\.js(\?[a-z]{1}\=\d+)?$/,script,~third-party
+/^https?:\/\/[^\s]+\/js(\/\d+){1,4}\?r\=\&[0-9]{4,}/$script,third-party
+/^https?:\/\/(www\.)?deviants\.com\/[a-z0-9]{5}\/[a-z]{2}\.js$/,script,~third-party
+/\/apu\.(php|hh)\?/

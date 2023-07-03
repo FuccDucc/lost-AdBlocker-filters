@@ -1,0 +1,45 @@
+! Title: Adguard for iOS, Android, and Windows Bypass Mitigation List
+! Licence: The Unlicense (https://choosealicense.com/licenses/unlicense/) as chosen by the original author Cybo1927. I am preserving this license during the reupload of this lost filters.
+! Proof the above claim is true: http://web.archive.org/web/20210911142237/https://raw.githubusercontent.com/JDixonCS/Special-Hosts/master/Enforcement/Adguard/iOS_AND_WIN_Bypass_Mitigation.txt > text: "! License: The Unlicense (https://choosealicense.com/licenses/unlicense/)" (backup: https://i.imgur.com/KIiGJnG.png)
+
+! No matter the reasons that original author removed their repo's and OSS presence, even if it was ego or pride, they won't have any control over this reupload existing or not. I would never encourage anyone taking away their work from the community, instead, let the community decide if they'll keep using it, even if it gets outdated.
+
+! Status: I do not possess the skills to update filter lists regularly, this is merely a reupload of what was purportedly lost forever due to original repo being deleted. Restored from OSINT backups. At least, the github raw link will work with your adblocker again.
+! Version: 3
+! Last Modified: March 18, 2021
+! Description: Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing Adguard software for iOS, Android, Windows, and Mac.
+
+! =======================================================================================================================================
+! Not all rules will with every Adguard software program just simply import the filter for Adguard software. This list will improve overtime.
+! Cybo1927 >> This avoids prefecting all together, this is the rule you will need the most.
+||*^$csp=prefetch-src 'none'
+! These two rules replicate the same privacy settings for blocking prefetching from uBlock Origin or Nano Defender for Adguard for Desktop and Adguard for Android. 
+$$link[rel="next"]
+$$link[rel="prefetch"]
+! These rules are relevant for Adguard for Desktop, Android, and iOS, work on all domains, not just blocked domains. 
+$$link[rel="preconnect"]
+$$link[rel="preload"]
+$$link[rel="dns-prefetch"]
+! Associated with pings
+$$link[rel="pingback"]
+! Other prefetching techniques
+$$link[rel="subresource"]
+$$link[rel="prev"]
+$$a[rel="prev"]
+$$link[rel="prerender"]
+! Other tracking attributes
+$$a[data-beacon-url]
+$$a[data-google-query-id]
+$$a[data-obtrack]
+$$a[data-oburl]
+$$a[onclick="ga"]
+$$a[onclick="_gaq.push"]
+$$a[onclick="_gap"]
+$$a[onclick="track"]
+$$a[onclick="dataLayer.push"]
+$$[referrerpolicy]
+$$[ping]
+$$a[href="javascript:void(0)"]
+$$a[onmouseup="setRealHref(event)"]
+! Supported in Adguard for Windows 7.5.1
+||*$ping
